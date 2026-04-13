@@ -710,12 +710,12 @@
     {
       label: "Frontend",
       featured: true,
-      skills: ["React JS", "Angular JS", "JavaScript", "HTML", "CSS"]
+      skills: ["React JS", "Angular JS", "JavaScript", "TypeScript (learning)", "HTML", "CSS"]
     },
     {
       label: "Backend & Data",
       featured: true,
-      skills: ["Python", "Django", "Node.JS", "PostgreSQL", "MySQL"]
+      skills: ["Python", "Django", "Node.JS", "Express", "PostgreSQL", "MySQL", "MongoDB"]
     },
     {
       label: "Mobile",
@@ -725,14 +725,21 @@
     {
       label: "Tools & Workflow",
       featured: false,
-      skills: ["Git", "GitHub", "AWS", "Heroku", "Jest", "Cypress", "Scrum", "Trello", "SalesForce"]
+      skills: ["Git", "GitHub", "Docker", "Stripe", "Valkey", "AWS", "Heroku", "Jest", "Cypress", "Auth0", "Scrum", "Trello", "SalesForce"]
     }
   ];
 
   const experience = [
     {
       company: "Seansoft Corporation",
-      period: "Feb 2023 – Present · 2+ yrs",
+      period: "Mar 2026 – Present · 2 mos",
+      role: "Software Developer — Code Test Web Application",
+      desc: "Building a full-stack multi-tenant SaaS platform for website uptime monitoring and automated code testing. Handles scheduled checks, failure reporting, real-time pub/sub dashboards, organization/user management, and Stripe-based subscription billing.",
+      tools: ["Node.js", "Express", "MongoDB", "React", "Python", "Cypress", "Docker", "Stripe", "Valkey", "Git"]
+    },
+    {
+      company: "Seansoft Corporation",
+      period: "Feb 2023 – Present · 3+ yrs",
       role: "Software Developer",
       desc: "Delivering features across multiple client projects using Angular and React Native. Collaborates in agile teams through sprint planning, peer code reviews, and cross-functional delivery cycles.",
       tools: ["Angular", "React Native", "Python", "Cypress", "Jest", "Git", "Scrum"]
@@ -760,6 +767,20 @@
       url: "https://mineral.tech",
       desc: "Enterprise mineral asset management platform. Contributed to real-time royalty dashboards, GIS mapping, API integrations, and end-to-end test coverage.",
       tags: ["Angular", "Python", "REST APIs", "Cypress", "Jest"]
+    },
+    {
+      name: "HiraGame",
+      from: "Personal Project",
+      url: "https://github.com/andreidimab/HiraGame",
+      desc: "A mobile application that teaches Hiragana and Katakana through recreational games. Built with React Native and TypeScript.",
+      tags: ["React Native", "TypeScript", "Mobile"]
+    },
+    {
+      name: "Code Test",
+      from: "Seansoft Corporation",
+      url: "https://github.com/andreidimab",
+      desc: "Full-stack multi-tenant SaaS platform for website uptime monitoring and automated code testing. Features real-time dashboards, scheduled checks, org/user management, and Stripe billing.",
+      tags: ["Node.js", "Express", "MongoDB", "React", "Python", "Docker", "Stripe", "Cypress"]
     }
   ];
 
@@ -789,7 +810,7 @@
             </h1>
             <div className="hero-bottom fade-up d2">
               <p className="hero-summary">
-                3+ years building web applications with React, Angular, and Python.
+                4+ years building web applications with React, Angular, Node.js, and Python.
                 Based in the Philippines, working across the full stack.
               </p>
               <div className="hero-cta">
@@ -839,7 +860,7 @@
                 <div className="stat-desc">Companies worked at</div>
               </div>
               <div className="stat-box">
-                <div className="stat-number">2</div>
+                <div className="stat-number">3</div>
                 <div className="stat-desc">Shipped projects</div>
               </div>
               <div className="stat-box">
@@ -941,11 +962,14 @@
                 <span className="badge badge-slate">DOST Scholar</span>
               </div>
             </div>
-            <div className="edu-card" style={{background:'var(--bg)', borderStyle:'dashed', display:'flex', alignItems:'center', justifyContent:'center', minHeight:'160px'}}>
-              <span style={{fontSize:'0.82rem', color:'var(--text-3)', textAlign:'center', lineHeight:'1.7'}}>
-                Certifications &amp; courses<br/>
-                <span style={{fontSize:'0.72rem'}}>Coming soon</span>
-              </span>
+            <div className="edu-card">
+              <span className="edu-icon">🔐</span>
+              <div className="edu-degree">CyberSecurity 101</div>
+              <div className="edu-school">cyber101.com</div>
+              <div className="edu-year">Issued Feb 2026 · Active</div>
+              <div className="badges">
+                <span className="badge badge-slate">Cybersecurity</span>
+              </div>
             </div>
           </div>
         </section>
